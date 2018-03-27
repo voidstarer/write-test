@@ -22,6 +22,9 @@ interrupt_test()
 	echo sending $sig signal
 	kill $sig $PID
 	md5sum $srcfile $dstfile
+	wanted=$(wc -c "$srcfile")
+	written=$(wc -c "$dstfile")
+	echo $written out of $wanted written
 }
 
 
