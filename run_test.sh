@@ -7,7 +7,7 @@ make clean
 make
 
 if [ ! -f $srcfile ]; then
-	seq 1 80000000 > /tmp/file1.txt
+	seq 1 80000000 > $srcfile
 fi
 
 interrupt_test()
