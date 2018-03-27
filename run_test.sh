@@ -28,5 +28,7 @@ interrupt_test()
 }
 
 
+echo ===================== TEST1 - TERM ====================
 interrupt_test -TERM
+echo ===================== TEST2 - KILL ====================
 interrupt_test -KILL
